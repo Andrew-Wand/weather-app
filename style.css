@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    min-height: 100vh;
+    background-image: url('./assets/weather-background.jpg');
+    background-size: 100% 100%;
+    position: relative;
+}
+
+/* Search bar */
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translateX(-50%);
+}
+
+
+/* Weather info */
+
+.weather-container {
+    display: none;
+}
+
+
+.weather-container.active {
+    padding: 10px;
+    display: block;
+    color: #fff;
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    transform: translateX(-50%);
+}
