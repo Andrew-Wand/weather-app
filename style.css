@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -9,6 +12,7 @@ body {
     background-image: url('./assets/weather-background.jpg');
     background-size: 100% 100%;
     position: relative;
+    font-family: 'Bebas Neue', sans-serif;
 }
 
 /* Search bar */
@@ -21,6 +25,49 @@ body {
     top: 30%;
     transform: translateX(-50%);
 }
+
+.search-bar {
+    border-radius: 5px 0px 0px 5px;
+    border: 3px solid #fff;
+    outline: none;
+    position: relative;
+    border-right: none;
+    width: 100%;
+    padding: 4px 10px;
+    font-size: 32px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+
+.search-btn {
+    cursor: pointer;
+    border: 1px solid #000;
+    border-radius: 0px 5px 5px 0;
+    width:  50px;
+    background: rgba(0, 0, 0, .8);
+    color: #fff;
+    font-size: 1.3em;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+
+.search-btn:hover {
+    background: rgba(48, 48, 48, 0.7);
+}
+
+input[type='text'] {
+    width: 300px;
+    animation-name: searchUnexpand;
+    animation-duration: .3s;
+  }
+  
+  input:focus[type="text"] {
+    width: 500px;
+    outline: 0;
+    animation-name: searchExpand;
+    animation-duration: .3s;
+  }
 
 
 /* Weather info */
@@ -40,3 +87,25 @@ body {
     top: 65%;
     transform: translateX(-50%);
 }
+
+
+
+
+/* keyframes */
+@keyframes searchExpand {
+    from {
+      width: 300px;
+    }
+    to {
+      width: 500px;
+    }
+  }
+  
+  @keyframes searchUnexpand {
+    from {
+      width: 500px;
+    }
+    to {
+      width: 300px;
+    }
+  }

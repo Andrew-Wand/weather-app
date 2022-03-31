@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Weather App</title>
 </head>
 
@@ -13,8 +16,10 @@
 
     <div>
         <form class="search-container" id="search-container">
-            <input type="text" class="search-bar" id="search-bar" placeholder="Search city here...">
-            <button type="submit" class="search-btn" id="search-btn">Search</button>
+            <input autocomplete="off" type="text" class="search-bar" id="search-bar" placeholder="Type city here...">
+            <button type="submit" class="search-btn" id="search-btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
         </form>
     </div>
 
